@@ -26,6 +26,7 @@ function timeFix(time) {
 var div = document.getElementById('timeContainer');
 function timeZone(string) {
 	var localhour=hour+h[string];
+	console.log(localhour);
 	if (localhour<0){
 		localhour=localhour+24;
 	}
@@ -44,4 +45,9 @@ function timeZone(string) {
 	localhour=timeFix(localhour);
 	$( ".timeContainer" ).html(localhour + ":" + minutes + localTime + "<br>");
 	(localhour + ":" + minutes);
+	Cookies.set("cookies", string);
+}
+if (Cookies.get("cookies")!=undefined){
+	console.log(Cookies.get("cookies"));
+	timeZone(Cookies.get("cookies"));
 }
