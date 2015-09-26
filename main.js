@@ -26,25 +26,28 @@ function timeFix(time) {
 var div = document.getElementById('timeContainer');
 function timeZone(string) {
 	var localhour=hour+h[string];
-	console.log(localhour);
+	var newMinutes=minutes;
 	if (localhour<0){
 		localhour=localhour+24;
 	}
-	
 	if (h[string]==9.5){
-		minutes=minutes+30;
-		if (minutes<30){
+		newMinutes=minutes+30;
+		if (newMinutes<30){
 			localhour=hour+9;
 		}
-		if (minutes>30) {
-			minutes=minutes-60;
+		if (newMinutes>30) {
+			newMinutes=newMinutes-60;
 			localhour=hour+10;
 		}
 	}
 	var localTime=timeOfDay(localhour);
 	localhour=timeFix(localhour);
-	$( ".timeContainer" ).html(localhour + ":" + minutes + localTime + "<br>");
-	(localhour + ":" + minutes);
+	if(newMinutes<10){
+		$( ".timeContainer" ).html(localhour + ":0" + newMinutes + localTime + "<br>");
+	}
+	else {
+		$( ".timeContainer" ).html(localhour + ":" + newMinutes + localTime + "<br>");
+	}
 	Cookies.set("cookies", string);
 }
 if (Cookies.get("cookies")!=undefined){
