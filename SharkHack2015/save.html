@@ -7,127 +7,174 @@
 		<title>World Clock</title>
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/smart-grid.css">
-		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-		<script type="text/javascript" src="../main.js"></script>
 		<script type="text/javascript" src="../jquery-1.11.3.js"></script>
+<<<<<<< Updated upstream
+		<script type="text/javascript" src="/vendor/js/js.cookie.js"></script>
+		<script type="text/javascript" src="../main.js"></script>
+	
+=======
 		<script type="text/javascript" src="../js.cookie.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+>>>>>>> Stashed changes
 	</head>
 
 	<body>
 		<div class="container">	
-			<div class="columns twelve"> <div class="row">
-				<header>
-				</header>
+				<div class="columns twelve"> <div class="row">
+					<header>
+							<center><a href="worldclock.html">
+								<img src="images/World-Clock.png" alt="World Clock">
+							</a>
+						</center>
+					</header>
+				</div> <!--end row -->
+			</div><!-- end twelve columns -->
 <center>
-						<div class="checkbox">
+<div class="checkbox">
+ <div class="row"><div class="three columns">
+ <h1>The Americas</h1>
   <label>
-    <input type="checkbox" value="">
+    <input type="checkbox" onclick="getCookies('bostonCookies', 'eastern')" value="">
     Boston
   </label><br>
     <label>
-    <input type="checkbox" value="">
+    <input type="checkbox" onclick="getCookies('losAngelesCookies', 'pacific')" value="">
     Los Angeles
   </label><br>
+<<<<<<< Updated upstream
 
+      <label>
+    <input type="checkbox" onclick="getCookies('tokyoCookies', 'japan')" value="">
+    Tokyo
+  </label><br>
+
+      <label>
+    <input type="checkbox" onclick="getCookies('parisCookies', 'germany')" value="">
+    Paris
+  </label><br>
+
+
+      <label>
+    <input type="checkbox" onclick="getCookies('hawaiiCookies', 'hawaii')" value="">
+    Hawaii
+  </label><br>
+
+=======
+>>>>>>> Stashed changes
+      <label>
+    <input type="checkbox" onclick="getCookies('alaskaCookies', 'alaska')"value="">
+    Alaska
+  </label><br>
+      <label>
+    <input type="checkbox" onclick="getCookies('mountainCookies', 'mountain')"value="">
+    Mountain
+  </label><br>
+      <label>
+    <input type="checkbox" onclick="getCookies('centralCookies', 'central')"value="">
+    Central
+  </label><br>
+      <label>
+    <input type="checkbox" onclick="getCookies('brazilCookies', 'brazil')"value="">
+    Brazil
+  </label><br>
+  
+</div>
+<div class="three columns">
+	<h1>Europe</h1>
+
+      <label>
+<<<<<<< Updated upstream
+    <input type="checkbox" onclick="getCookies('icelandCookies', 'iceland')"value="">
+=======
+    <input type="checkbox" value="">
+    Paris
+  </label><br>
+      <label>
+    <input type="checkbox" value="">
+>>>>>>> Stashed changes
+    Iceland
+  </label><br>
+
+
+      <label>
+    <input type="checkbox" onclick="getCookies('irelandCookies', 'ireland')"value="">
+    Ireland
+  </label><br>
+
+
+      <label>
+    <input type="checkbox" onclick="getCookies('greeceCookies', 'greece')"value="">
+    Greece
+  </label><br>
+</div>
+<div class="three columns">
+	<h1>Continental Asia</h1>
       <label>
     <input type="checkbox" value="">
     Tokyo
   </label><br>
 
       <label>
-    <input type="checkbox" value="">
-    Paris
-  </label><br>
-
-
-      <label>
-    <input type="checkbox" value="">
-    Hawaii
-  </label><br>
-
-      <label>
-    <input type="checkbox" value="">
-    Alaska
-  </label><br>
-
-      <label>
-    <input type="checkbox" value="">
-    Mountain
-  </label><br>
-
-
-      <label>
-    <input type="checkbox" value="">
-    Central
-  </label><br>
-
-
-      <label>
-    <input type="checkbox" value="">
-    Brazil
-  </label><br>
-
-
-      <label>
-    <input type="checkbox" value="">
-    Iceland
-  </label><br>
-
-
-      <label>
-    <input type="checkbox" value="">
-    Ireland
-  </label><br>
-
-
-      <label>
-    <input type="checkbox" value="">
-    Greece
-  </label><br>
-
-
-      <label>
-    <input type="checkbox" value="">
+    <input type="checkbox" onclick="getCookies('pakistanCookies', 'pakistan')"value="">
     Pakistan
   </label><br>
 
       <label>
-    <input type="checkbox" value="">
+    <input type="checkbox" onclick="getCookies('indiaCookies', 'india')"value="">
     India
   </label><br>
 
       <label>
-    <input type="checkbox" value="">
+    <input type="checkbox" onclick="getCookies('bangladeshCookies', 'bangladesh')"value="">
     Bangledesh
   </label><br>
 
 
       <label>
-    <input type="checkbox" value="">
+    <input type="checkbox" onclick="getCookies('thailandCookies', 'thailand')"value="">
     Thailand
   </label><br>
 
 
       <label>
-    <input type="checkbox" value="">
+    <input type="checkbox" onclick="getCookies('chinaCookies', 'china')"value="">
     China
   </label><br>
-
-
+</div>
+<div class="three columns">
+	<h1>Pacific Islands</h1>
       <label>
-    <input type="checkbox" value="">
+    <input type="checkbox" onclick="getCookies('papuaNewGuineaCookies', 'papua new guinea')"value="">
     Papua New Guinea
   </label><br>
-
-
       <label>
     <input type="checkbox" value="">
+    Hawaii
+  </label><br>
+      <label>
+    <input type="checkbox" onclick="getCookies('fijiCookies', 'fiji')"value="">
     Fiji
   </label><br>
-</center>
-
+<<<<<<< Updated upstream
+  
+	<form action="http://134.140.106.120:8080/SharkHack2015/worldclock.html">
+		<input type="submit" value="Go to homepage">
+	</form>
+=======
 </div>
+</div>
+>>>>>>> Stashed changes
+</center>
+<div class="row"><div class="twelve columns">
+<footer>
+ <center> <p>Created by: the Angel Sharks<br> Navie Narula, Dee Moore, Rebecca Moreau</p></center>
+  
+</footer>
+</div></div>
+</div>
+	</body>
+</html>
