@@ -2,46 +2,67 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-	<meta charset="utf-8"/>
+	<head>
+		<meta charset="utf-8"/>
 
-	<title>World Clock</title>
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/smart-grid.css">
-	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-</head>
+		<title>World Clock</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/smart-grid.css">
+		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="../main.js"></script>
+		<script type="text/javascript" src="../jquery-1.11.3.js"></script>
+	</head>
 
-<body>
-<div class="container">	
-<div class="columns twelve"> <div class="row">
-	<header>
-		<div class="logo"><a href="worldclock.html">
-			<img src="images/World-Clock.png" alt="World Clock">
-		</a>
-	</div><!-- end logo -->
-	</header>
-
-</div> <!--end row -->
-</div><!-- end twelve columns -->
-<div class="content">	
-<div class="row">
-	<div class="three columns">
-		<h1> Boston </h1>
-	</div><!-- end three columns-->
-	<div class="three columns">
-		<h1>Los Angeles</h1>
-	</div><!-- end three columns -->
-	<div class="three columns">
-		<h1>Tokyo</h1>
-	</div><!-- end three columns -->
-	<div class="three columns">
-		<h1>Paris</h1>
-	</div><!-- end three columns -->
-	
-</div><!-- end row -->
-</div> <!-- end content -->
-</div> <!-- end main container  -->
-</body>
+	<body>
+		<div class="container">	
+			<div class="columns twelve"> <div class="row">
+				<header>
+					<div class="logo">
+						<a href="worldclock.html">
+							<img src="images/World-Clock.png" alt="World Clock">
+						</a>
+					</div><!-- end logo -->
+				</header>
+			</div> <!--end row -->
+		</div><!-- end twelve columns -->
+		<div class="header">
+			<div class="container">	
+				<div class="row">
+					<div class="col-md-3">
+						<h1 onclick="timeZone('eastern')">Boston</h1>
+					</div><!-- end three columns-->
+					<div class="col-md-3">
+						<h1 onclick="timeZone('pacific')">Los Angeles</h1>
+					</div><!-- end three columns -->
+					<div class="col-md-3">
+						<h1 onclick="timeZone('japan')">Tokyo</h1>
+					</div><!-- end three columns -->
+					<div class="col-md-3">
+						<h1 onclick="timeZone('germany')">Paris</h1>
+					</div><!-- end three columns -->
+				</div><!-- end row -->			
+			</div> <!-- end content -->
+		</div> <!-- end main container  -->
+		<div class="timeContainer"></div>
+		<div class="moreLinks">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<h3 onclick="timeZone('hawaii')">Hawaii</h3>
+					</div>
+					<div class="col-md-4">
+						<h3 onclick="timeZone('alaska')">Alaska</h3>
+					</div>
+					<div class="col-md-4">
+						<h3 onclick="timeZone('mountain')">Mountain</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
 

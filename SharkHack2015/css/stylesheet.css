@@ -35,6 +35,7 @@ h1{
 	font-weight: bold;
 	font-size: 1.5em;
 	padding-bottom: .75em;
+	text-align:center;
 }
 
 h2{
@@ -64,6 +65,11 @@ li{
 ol li{
 	list-style-type: decimal;
 	margin-left: 1.25em;
+}
+.timeContainer {
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
 }
 
 
