@@ -48,9 +48,11 @@ function timeZone(string) {
 	else {
 		$( ".timeContainer" ).html(localhour + ":" + newMinutes + localTime + "<br>");
 	}
-	Cookies.set("cookies", string);
 }
-if (Cookies.get("cookies")!=undefined){
-	console.log(Cookies.get("cookies"));
-	timeZone(Cookies.get("cookies"));
+function getCookies(name, string){
+	Cookies.set(name, string);
+	console.log(Cookies.get(name));
+	if (Cookies.get(name)!=undefined){
+		timeZone(Cookies.get(name));
+	}
 }

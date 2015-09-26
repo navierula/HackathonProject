@@ -3,10 +3,6 @@ html, body{
 	height: 100%;
 } 
 
-body{
-	background-color: rgb(0, 146, 69);
-	font-family: 'Montserrat', sans-serif;
-}
 
 .container{
 	margin-left: auto;
@@ -32,7 +28,7 @@ p{
 }
 h1{
 	font-weight: bold;
-	font-size: 1.5em;
+	font-size: 25px;
 	padding-bottom: .75em;
 	text-align:center;
 }
@@ -111,3 +107,6 @@ ol li{
 	margin-left:-75px;
 }
 
+body{
+	font-family: 'Montserrat', sans-serif;
+}
