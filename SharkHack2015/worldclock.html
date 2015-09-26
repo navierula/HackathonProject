@@ -2,9 +2,23 @@
 <!DOCTYPE html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8"/>
+<head>
+	<meta charset="utf-8"/>
 
+<<<<<<< HEAD
+	<title>World Clock</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/smart-grid.css">
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="../main.js"></script>
+	<script type="text/javascript" src="../jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="../js.cookie.js"></script>
+</head>
+=======
 		<title>World Clock</title>
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/smart-grid.css">
@@ -16,98 +30,117 @@
 		<script type="text/javascript" src="../js.cookie.js"></script>
 		<script type="text/javascript" src="../jquery-1.11.3.js"></script>
 	</head>
+>>>>>>> rebeccamoreau/master
 
-	<body>
+<body>
+	<div class="container">	
+		<div class="columns twelve"> <div class="row">
+			<header>
+				<div class="logo">
+					<a href="worldclock.html">
+						<img src="images/World-Clock.png" alt="World Clock">
+					</a>
+				</div><!-- end logo -->
+
+			</header>
+		</div> <!--end row -->
+	</div><!-- end twelve columns -->
+	<div class="header">
 		<div class="container">	
-			<div class="columns twelve"> <div class="row">
-				<header>
-					<div class="logo">
-						<a href="worldclock.html">
-							<img src="images/World-Clock.png" alt="World Clock">
-						</a>
-					</div><!-- end logo -->
-				</header>
-			</div> <!--end row -->
-		</div><!-- end twelve columns -->
-		<div class="header">
-			<div class="container">	
-				<div class="row">
-					<div class="col-md-3">
-						<h1 onclick="timeZone('eastern')">Boston</h1>
-					</div><!-- end three columns-->
-					<div class="col-md-3">
-						<h1 onclick="timeZone('pacific')">Los Angeles</h1>
-					</div><!-- end three columns -->
-					<div class="col-md-3">
-						<h1 onclick="timeZone('japan')">Tokyo</h1>
-					</div><!-- end three columns -->
-					<div class="col-md-3">
-						<h1 onclick="timeZone('germany')">Paris</h1>
-					</div><!-- end three columns -->
-				</div><!-- end row -->			
-			</div> <!-- end content -->
-		</div> <!-- end main container  -->
-		<div class="timeContainer"></div>
-		<div class="moreLinks">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4">
-						<h3 onclick="timeZone('hawaii')">Hawaii</h3>
-					</div>
-					<div class="col-md-4">
-						<h3 onclick="timeZone('alaska')">Alaska</h3>
-					</div>
-					<div class="col-md-4">
-						<h3 onclick="timeZone('mountain')">Mountain</h3>
-					</div>
+			<div class="row" id="row-pics">
+				<div class="col-md-3">
+					<h1 onclick="timeZone('eastern')">Boston</h1>
+					<img src="CityPics/Boston.jpg" alt="Boston">
+				</div><!-- end three columns-->
+				<div class="col-md-3">
+					<h1 onclick="timeZone('pacific')">Los Angeles</h1>
+					<img src="CityPics/LA.jpg" alt="LA">
+				</div><!-- end three columns -->
+				<div class="col-md-3">
+					<h1 onclick="timeZone('japan')">Tokyo</h1>
+					<img src="CityPics/Tokyo.jpg" alt="Tokyo">
+				</div><!-- end three columns -->
+				<div class="col-md-3">
+					<h1 onclick="timeZone('germany')">Paris</h1>
+					<img src="CityPics/Paris.jpg" alt="Paris">
+				</div><!-- end three columns -->
+			</div><!-- end row -->			
+		</div> <!-- end content -->
+	</div> <!-- end main container  -->
+	<div class="timeContainer"></div>
+	<div class="moreLinks">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<h3 onclick="timeZone('hawaii')">Hawaii</h3>
 				</div>
-				<div class="row">
-					<div class="col-md-4">
-						<h3 onclick="timeZone('central')">Central</h3>
-					</div>
-					<div class="col-md-4">
-						<h3 onclick="timeZone('brazil')">Brazil</h3>
-					</div>
-					<div class="col-md-4">
-						<h3 onclick="timeZone('iceland')">Iceland</h3>
-					</div>
+				<div class="col-md-4">
+					<h3 onclick="timeZone('alaska')">Alaska</h3>
 				</div>
-				<div class="row">
-					<div class="col-md-4">
-						<h3 onclick="timeZone('ireland')">Ireland</h3>
-					</div>
-					<div class="col-md-4">
-						<h3 onclick="timeZone('greece')">Greece</h3>
-					</div>
-					<div class="col-md-4">
-						<h3 onclick="timeZone('pakistan')">Pakistan</h3>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4">
-						<h3 onclick="timeZone('india')">India</h3>
-					</div>
-					<div class="col-md-4">
-						<h3 onclick="timeZone('bangladesh')">Bangladesh</h3>
-					</div>
-					<div class="col-md-4">
-						<h3 onclick="timeZone('thailand')">Thailand</h3>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4">
-						<h3 onclick="timeZone('china')">China</h3>
-					</div>
-					<div class="col-md-4">
-						<h3 onclick="timeZone('papua new guinea')">Papua New Guinea</h3>
-					</div>
-					<div class="col-md-4">
-						<h3 onclick="timeZone('fiji')">Fiji</h3>
-					</div>
+				<div class="col-md-4">
+					<h3 onclick="timeZone('mountain')">Mountain</h3>
 				</div>
 			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<h3 onclick="timeZone('central')">Central</h3>
+				</div>
+				<div class="col-md-4">
+					<h3 onclick="timeZone('brazil')">Brazil</h3>
+				</div>
+				<div class="col-md-4">
+					<h3 onclick="timeZone('iceland')">Iceland</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<h3 onclick="timeZone('ireland')">Ireland</h3>
+				</div>
+				<div class="col-md-4">
+					<h3 onclick="timeZone('greece')">Greece</h3>
+				</div>
+				<div class="col-md-4">
+					<h3 onclick="timeZone('pakistan')">Pakistan</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<h3 onclick="timeZone('india')">India</h3>
+				</div>
+				<div class="col-md-4">
+					<h3 onclick="timeZone('bangladesh')">Bangladesh</h3>
+				</div>
+				<div class="col-md-4">
+					<h3 onclick="timeZone('thailand')">Thailand</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<h3 onclick="timeZone('china')">China</h3>
+				</div>
+				<div class="col-md-4">
+					<h3 onclick="timeZone('papua new guinea')">Papua New Guinea</h3>
+				</div>
+				<div class="col-md-4">
+					<h3 onclick="timeZone('fiji')">Fiji</h3>
+				</div>
+				<br>
+				<br>
+				<center>
+					<a href="save.html">
+						<button class="Button btn btn-default" type="button" >Save Your Clocks! </button>
+					</a>
+					</div>
+				</center>
+			</div>
 		</div>
+<<<<<<< HEAD
+	</div>
+</body>
+<br>
+=======
 		<script type="text/javascript" src="../main.js"></script>
 	</body>
+>>>>>>> rebeccamoreau/master
 </html>
 

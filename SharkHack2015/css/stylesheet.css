@@ -40,12 +40,12 @@ h1{
 h2{
 	font-size: 1.25em;
 	padding-bottom: .5em;
-	padding-top: .25em;
+	padding-top: .1em;
 }
 h3 {
 	font-weight: bold;
 	font-size: 1.5em;
-	padding-bottom: .75em;
+	padding-bottom: .7em;
 	text-align:center;
 }
 
@@ -76,7 +76,7 @@ ol li{
 	font-family: 'Montserrat', sans-serif;
 	font-size: 20px;
 	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-bottom: 40px;
 }
 
 .myButton {
@@ -99,3 +99,15 @@ ol li{
 	position:relative;
 	top:1px;
 }
+
+.header img{
+	background-size:contain;
+	height:300px;
+	width:250px;
+}
+
+#row-pics {
+	margin-right:-15px;
+	margin-left:-75px;
+}
+
