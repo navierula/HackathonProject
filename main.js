@@ -52,7 +52,6 @@ function timeZone(string) {
 function getCookies(name, string){
 	Cookies.set(name, string);
 	console.log(Cookies.get(name));
-	if (Cookies.get(name)!=undefined){
-		timeZone(Cookies.get(name));
-	}
+	var country=Cookies.get(name);
+	timeZone(country);
 }
